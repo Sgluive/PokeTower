@@ -1,0 +1,23 @@
+Player Pokemons :
+001-Bulbasaur : Throws sharp leaves continuously while the ennemy is in its range
+004-Charmander : Spit fire on a line, powerful but slow
+007-Squirtle : Spit bubbles that burst on an ennemy and slown down all the ennemies within the splash range
+081-Magnemite : Throws a lightning that hurts the first ennemy at 100% and the followings less and less
+016-Pidgey : Attacks aerian units with wind blades
+043-Oddish : Throws spores that inflicts poison
+
+
+Ennemy Pokemons :
+088-Grimer : slow but strong
+109-Koffing : medium
+023-Ekans : weak but fast
+021-Spearow : flying
+052-Meowth : mid-boss
+150-Mewtwo : last boss
+
+
+All the evolutions will be the same kind but stronger (Improved damage, range, speed, etc)
+
+Each time an ennemy is defeated, the player gain pokedollars.
+With this money, the player will be able to purchase new towers, or stones used to make the pokemons evolve !
+PokeDrug to make them shiney and over-powerful ? *o*
