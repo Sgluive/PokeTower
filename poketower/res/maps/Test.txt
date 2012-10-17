@@ -1,0 +1,10 @@
+BBBBBBBBBBBBBBB
+BXXX          B
+BXSX  ......  B
+BX.X  .    .  B
+B .   .    .  B
+B .   .    .  B
+B .   .    .  B
+B .....   XPX B
+B         XXX B
+BBBBBBBBBBBBBBB
