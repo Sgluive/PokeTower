@@ -1,0 +1,11 @@
+WAVE
+0|Grimer|10
+2|Koffing|5
+WAVE
+0|Ekans|15
+4|Grimer|5
+6|Koffing|4
+WAVE
+0|Meowth|1
+WAVE
+0|Mewtwo|1
