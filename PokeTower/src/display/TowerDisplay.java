@@ -204,9 +204,148 @@ public class TowerDisplay {
 					sprite = new Sprite(x * SQUARE_SIZE, y * SQUARE_SIZE, this._TMewtwo, main.getVertexBufferObjectManager());
 				if (sprite != null)
 				{
-					scene.attachChild(sprite);
 					sprite.setScaleCenter(0, 0);
-					sprite.setScale((float) 0.4);
+					if (name == "Bulbasaur")
+					{
+						sprite.setScale((float)0.38);
+						sprite.setPosition(sprite.getX() - (float)9.2, sprite.getY() - (float)9.4);
+					}
+					else if (name == "Ivysaur")
+					{
+						sprite.setScale((float)0.26);
+						sprite.setPosition(sprite.getX() - (float)4.6, sprite.getY() - (float)5);
+					}
+					else if (name == "Venusaur")
+					{
+						sprite.setScale((float)0.18);
+						sprite.setPosition(sprite.getX() - (float)0.6, sprite.getY() - (float)0.2);
+					}
+					else if (name == "Charmander")
+					{
+						sprite.setScale((float)0.32);
+						sprite.setPosition(sprite.getX() - (float)7.6, sprite.getY() - (float)7.8);
+					}
+					else if (name == "Charmeleon")
+					{
+						sprite.setScale((float)0.24);
+						sprite.setPosition(sprite.getX() - (float)4, sprite.getY() - (float)4);
+					}
+					else if (name == "Charizard")
+					{
+						sprite.setScale((float)0.18);
+						sprite.setPosition(sprite.getX() - (float)0.6, sprite.getY() - (float)1);
+					}
+					else if (name == "Squirtle")
+					{
+						sprite.setScale((float)0.32);
+						sprite.setPosition(sprite.getX() - (float)7.4, sprite.getY() - (float)7.4);
+					}
+					else if (name == "Wartortle")
+					{
+						sprite.setScale((float)0.24);
+						sprite.setPosition(sprite.getX() - (float)4, sprite.getY() - (float)4);
+					}
+					else if (name == "Blastoise")
+					{
+						sprite.setScale((float)0.2);
+						sprite.setPosition(sprite.getX() - (float)1.6, sprite.getY() - (float)1.4);
+					}
+					else if (name == "Magnemite")
+					{
+						sprite.setScale((float)0.38);
+						sprite.setPosition(sprite.getX() - (float)10.2, sprite.getY() - (float)9.4);
+					}
+					else if (name == "Magneton")
+					{
+						sprite.setScale((float)0.22);
+						sprite.setPosition(sprite.getX() - (float)2, sprite.getY() - (float)2);
+					}
+					else if (name == "Pidgey")
+					{
+						sprite.setScale((float)0.32);
+						sprite.setPosition(sprite.getX() - (float)7.8, sprite.getY() - (float)7.2);
+					}
+					else if (name == "Pidgeotto")
+					{
+						sprite.setScale((float)0.19);
+						sprite.setPosition(sprite.getX() - (float)0.4, sprite.getY() - (float)1.2);
+					}
+					else if (name == "Pidgeot")
+					{
+						sprite.setScale((float)0.2);
+						sprite.setPosition(sprite.getX() - (float)1.4, sprite.getY() - (float)1.4);
+					}
+					else if (name == "Oddish")
+					{
+						sprite.setScale((float)0.36);
+						sprite.setPosition(sprite.getX() - (float)8.6, sprite.getY() - (float)9.2);
+					}
+					else if (name == "Gloom")
+					{
+						sprite.setScale((float)0.28);
+						sprite.setPosition(sprite.getX() - (float)5, sprite.getY() - (float)6);
+					}
+					else if (name == "Vileplume")
+					{
+						sprite.setScale((float)0.24);
+						sprite.setPosition(sprite.getX() - (float)2.4, sprite.getY() - (float)3);
+					}
+					else if (name == "Grimer")
+					{
+						sprite.setScale((float)0.26);
+						sprite.setPosition(sprite.getX() - (float)3.6, sprite.getY() - (float)4);
+					}
+					else if (name == "Muk")
+					{
+						sprite.setScale((float)0.18);
+						sprite.setPosition(sprite.getX() - (float)1.4, sprite.getY() - (float)1);
+					}
+					else if (name == "Koffing")
+					{
+						sprite.setScale((float)0.22);
+						sprite.setPosition(sprite.getX() - (float)2.4, sprite.getY() - (float)2);
+					}
+					else if (name == "Weezing")
+					{
+						sprite.setScale((float)0.18);
+						sprite.setPosition(sprite.getX() - (float)1.4, sprite.getY() - (float)1);
+					}
+					else if (name == "Ekans")
+					{
+						sprite.setScale((float)0.32);
+						sprite.setPosition(sprite.getX() - (float)7.4, sprite.getY() - (float)7.6);
+					}
+					else if (name == "Arbok")
+					{
+						sprite.setScale((float)0.2);
+						sprite.setPosition(sprite.getX() - (float)0.2, sprite.getY() - (float)1.6);
+					}
+					else if (name == "Spearow")
+					{
+						sprite.setScale((float)0.32);
+						sprite.setPosition(sprite.getX() - (float)7, sprite.getY() - (float)6.8);
+					}
+					else if (name == "Fearow")
+					{
+						sprite.setScale((float)0.18);
+						sprite.setPosition(sprite.getX() - (float)1, sprite.getY() - (float)0.2);
+					}
+					else if (name == "Meowth")
+					{
+						sprite.setScale((float)0.26);
+						sprite.setPosition(sprite.getX() - (float)5, sprite.getY() - (float)4);
+					}
+					else if (name == "Persian")
+					{
+						sprite.setScale((float)0.2);
+						sprite.setPosition(sprite.getX() - (float)3.2, sprite.getY() - (float)2);
+					}
+					else if (name == "Mewtwo")
+					{
+						sprite.setScale((float)0.2);
+						sprite.setPosition(sprite.getX() - (float)3, sprite.getY() - (float)2);
+					}
+					scene.attachChild(sprite);
 					_sprites.put(tmp, sprite);
 				}
 				break;

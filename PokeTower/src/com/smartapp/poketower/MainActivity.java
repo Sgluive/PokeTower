@@ -64,10 +64,37 @@ public class MainActivity extends SimpleBaseGameActivity {
 		final Scene scene = new Scene();
 
 		this._map.displayMap(this, scene);
+		//Towers
 		this._towerDisplay.addTower(this, scene, "Bulbasaur", 0, 0);
-		this._towerDisplay.addTower(this, scene, "Ivysaur", 0, 1);
-		this._towerDisplay.addTower(this, scene, "Venusaur", 0, 2);
-		this._towerDisplay.addTower(this, scene, "Oddish", 0, 4);
+		this._towerDisplay.addTower(this, scene, "Ivysaur", 1, 0);
+		this._towerDisplay.addTower(this, scene, "Venusaur", 2, 0);
+		this._towerDisplay.addTower(this, scene, "Charmander", 3, 0);
+		this._towerDisplay.addTower(this, scene, "Charmeleon", 4, 0);
+		this._towerDisplay.addTower(this, scene, "Charizard", 5, 0);
+		this._towerDisplay.addTower(this, scene, "Squirtle", 6, 0);
+		this._towerDisplay.addTower(this, scene, "Wartortle", 7, 0);
+		this._towerDisplay.addTower(this, scene, "Blastoise", 8, 0);
+		this._towerDisplay.addTower(this, scene, "Magnemite", 9, 0);
+		this._towerDisplay.addTower(this, scene, "Magneton", 10, 0);
+		this._towerDisplay.addTower(this, scene, "Pidgey", 11, 0);
+		this._towerDisplay.addTower(this, scene, "Pidgeotto", 12, 0);
+		this._towerDisplay.addTower(this, scene, "Pidgeot", 13, 0);
+		this._towerDisplay.addTower(this, scene, "Oddish", 14, 0);
+		this._towerDisplay.addTower(this, scene, "Gloom", 14, 1);
+		this._towerDisplay.addTower(this, scene, "Vileplume", 14, 2);
+		
+		//Enemies
+		this._towerDisplay.addTower(this, scene, "Grimer", 0, 9);
+		this._towerDisplay.addTower(this, scene, "Muk", 1, 9);
+		this._towerDisplay.addTower(this, scene, "Koffing", 2, 9);
+		this._towerDisplay.addTower(this, scene, "Weezing", 3, 9);
+		this._towerDisplay.addTower(this, scene, "Ekans", 4, 9);
+		this._towerDisplay.addTower(this, scene, "Arbok", 5, 9);
+		this._towerDisplay.addTower(this, scene, "Spearow", 6, 9);
+		this._towerDisplay.addTower(this, scene, "Fearow", 7, 9);
+		this._towerDisplay.addTower(this, scene, "Meowth", 8, 9);
+		this._towerDisplay.addTower(this, scene, "Persian", 9, 9);
+		this._towerDisplay.addTower(this, scene, "Mewtwo", 10, 9);
 		return scene;
 	}
 }

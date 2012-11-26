@@ -29,7 +29,11 @@ public class Map {
 
 	//Textures
 	private ITextureRegion _TForbidden;
-	private ITextureRegion _TBorder;
+	private ITextureRegion _TLUBorder;
+	private ITextureRegion _TRUBorder;
+	private ITextureRegion _TLVBorder;
+	private ITextureRegion _TRVBorder;
+	private ITextureRegion _THBorder;
 	private ITextureRegion _TPrincess;
 	private ITextureRegion _TSpawner;
 	private ITextureRegion _TPath;
