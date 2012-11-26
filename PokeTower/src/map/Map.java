@@ -112,11 +112,16 @@ public class Map {
 		ITexture TPrincess = TowerDisplay.loadTexture(main, "gfx/Princess.png");
 		this._TPrincess = TextureRegionFactory.extractFromTexture(TPrincess);
 
-		ITexture TSpawner = TowerDisplay.loadTexture(main, "gfx/Spawner.png");
-		this._TSpawner = TextureRegionFactory.extractFromTexture(TSpawner);
-
-		ITexture TBorder = TowerDisplay.loadTexture(main, "gfx/Border.png");
-		this._TBorder = TextureRegionFactory.extractFromTexture(TBorder);
+		ITexture THBorder = TowerDisplay.loadTexture(main, "gfx/HBorder.png");
+		this._THBorder = TextureRegionFactory.extractFromTexture(THBorder);
+		ITexture TLUBorder = TowerDisplay.loadTexture(main, "gfx/LUBorder.png");
+		this._TLUBorder = TextureRegionFactory.extractFromTexture(TLUBorder);
+		ITexture TRUBorder = TowerDisplay.loadTexture(main, "gfx/RUBorder.png");
+		this._TRUBorder = TextureRegionFactory.extractFromTexture(TRUBorder);
+		ITexture TLVBorder = TowerDisplay.loadTexture(main, "gfx/LVBorder.png");
+		this._TLVBorder = TextureRegionFactory.extractFromTexture(TLVBorder);
+		ITexture TRVBorder = TowerDisplay.loadTexture(main, "gfx/RVBorder.png");
+		this._TRVBorder = TextureRegionFactory.extractFromTexture(TRVBorder);
 
 		ITexture TPath = TowerDisplay.loadTexture(main, "gfx/Path.png");
 		this._TPath = TextureRegionFactory.extractFromTexture(TPath);
@@ -140,9 +145,20 @@ public class Map {
 				else if (_map.get(y).charAt(x) == 'P')
 					sprite = new Sprite(x * SQUARE_SIZE, y * SQUARE_SIZE, this._TPrincess, main.getVertexBufferObjectManager());
 				else if (_map.get(y).charAt(x) == 'S')
-					sprite = new Sprite(x * SQUARE_SIZE, y * SQUARE_SIZE, this._TSpawner, main.getVertexBufferObjectManager());
+					sprite = new Sprite(x * SQUARE_SIZE, y * SQUARE_SIZE, this._TPath, main.getVertexBufferObjectManager());
 				else if (_map.get(y).charAt(x) == 'B')
-					sprite = new Sprite(x * SQUARE_SIZE, y * SQUARE_SIZE, this._TBorder, main.getVertexBufferObjectManager());
+				{
+					if (x == 0 && y == 0)
+						sprite = new Sprite(x * SQUARE_SIZE, y * SQUARE_SIZE, this._TLUBorder, main.getVertexBufferObjectManager());
+					else if (x == _map.get(y).length() - 1 && y == 0)
+						sprite = new Sprite(x * SQUARE_SIZE, y * SQUARE_SIZE, this._TRUBorder, main.getVertexBufferObjectManager());
+					else if (x == 0 && y != _map.size() - 1)
+						sprite = new Sprite(x * SQUARE_SIZE, y * SQUARE_SIZE, this._TLVBorder, main.getVertexBufferObjectManager());
+					else if (x == _map.get(y).length() - 1 && y != _map.size() - 1)
+						sprite = new Sprite(x * SQUARE_SIZE, y * SQUARE_SIZE, this._TRVBorder, main.getVertexBufferObjectManager());
+					else
+						sprite = new Sprite(x * SQUARE_SIZE, y * SQUARE_SIZE, this._THBorder, main.getVertexBufferObjectManager());
+				}
 				else if (_map.get(y).charAt(x) == '.')
 					sprite = new Sprite(x * SQUARE_SIZE, y * SQUARE_SIZE, this._TPath, main.getVertexBufferObjectManager());
 				else if (_map.get(y).charAt(x) == ' ')
@@ -154,7 +170,7 @@ public class Map {
 				}
 			}
 	}
-	
+
 	public void clearMap(Scene scene)
 	{
 		Sprite sprite;
